@@ -14,6 +14,9 @@ const GamesNav = () => {
             <button className="gamesNav__button">Video Slots</button>
           </li>
         ))}
+        <li className="gamesNav__item active">
+          <button className="gamesNav__button">all</button>
+        </li>
       </ul>
     </div>
   );
