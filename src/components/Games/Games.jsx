@@ -1,13 +1,14 @@
 import React from 'react';
 import GamesNav from '../GamesNav/GamesNav';
+import GamesItem from '../GamesItem/GamesItem';
 
 const Games = () => {
   return (
     <div className={'games'}>
       <GamesNav />
-      <ul className="gamesNav__menu">
+      <ul className="games__link">
         {Array.from(Array(11), (_, i) => (
-          <li key={i} className="gamesNav__block" />
+          <GamesItem key={i} />
         ))}
       </ul>
     </div>
