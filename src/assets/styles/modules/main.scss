@@ -14,6 +14,10 @@
   justify-content: flex-start;
   padding: 0 25px;
   margin-bottom: 25px;
+
+  @include mobile {
+    padding: 0 12px;
+  }
 }
 
 .gamesNav__list {
@@ -28,6 +32,10 @@
 
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  @include mobile {
+    margin: 0 0 0 15px;
   }
 }
 
@@ -157,6 +165,11 @@
   flex-wrap: wrap;
   list-style-type: none;
   margin: 0 25px;
+
+  @include mobile {
+    width: 100%;
+    margin: 0 12px;
+  }
 }
 
 .games__item {
@@ -176,6 +189,19 @@
   &:nth-last-child(-n + 5) {
     margin-bottom: 0;
   }
+
+  @include mobile {
+    width: calc(100% / 2 - 28px / 2);
+    height: 205px;
+    margin: 0 14px 14px 0;
+
+    @include mobile {
+      &:nth-child(2n){
+        margin-right: 0;
+      }
+    }
+  }
+
 
 }
 
@@ -205,6 +231,10 @@
   background: transparent;
   border: none;
   outline: none;
+
+  @include mobile {
+    padding: 2px 5px;
+  }
 }
 
  .games__name {
