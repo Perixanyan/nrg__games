@@ -6,11 +6,16 @@ const Games = () => {
   return (
     <div className={'games'}>
       <GamesNav />
-      <ul className="games__link">
+      <ul className="games__list">
         {Array.from(Array(11), (_, i) => (
           <GamesItem key={i} />
         ))}
       </ul>
+      <div className="games__load">
+        <button type={'button'} className="games__LoadButton">
+          Load More
+        </button>
+      </div>
     </div>
   );
 };
